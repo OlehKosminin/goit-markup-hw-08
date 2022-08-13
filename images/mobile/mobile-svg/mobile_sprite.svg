@@ -1,0 +1,10 @@
+<svg aria-hidden="true"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="menu" viewBox="0 0 64 32">
+<path d="M7.997 5.333v-5.333h48v5.333h-48zM7.997 18.666h48v-5.333h-48v5.333zM7.997 32h48v-5.333h-48v5.333z"></path>
+</symbol>
+<symbol id="close" viewBox="0 0 64 32">
+<path d="M47.997 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
+</symbol>
+</defs>
+</svg>

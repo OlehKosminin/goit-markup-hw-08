@@ -1,0 +1,153 @@
+// .is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+// .backdrop_menu {
+//   position: fixed;
+//   display: inline-block;
+
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+
+//   background-color: $secondary-white-color;
+
+//   z-index: 10;
+
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.burger__menu {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 30px;
+
+  background-color: $secondary-white-color;
+}
+
+.burger__menu_button {
+  display: inline-flex;
+
+  padding: 0;
+  margin: 0;
+
+  margin-right: 15px;
+
+  max-width: 40px;
+  max-height: 40px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.burger__menu_button {
+  display: inline-block;
+  fill: $primari-text-color;
+
+  width: 40px;
+  height: 40px;
+
+  z-index: 11;
+
+  & .burger__menu__icon--close {
+    display: none;
+  }
+
+  &.is-open .burger__menu__icon--close {
+    display: block;
+  }
+
+  &.is-open .burger__menu__icon--menu {
+    display: none;
+  }
+}
+
+.site-naw {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 250px;
+}
+
+.site-naw__item {
+  margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.auth-naw {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 64px;
+}
+
+.auth-naw__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.auth-naw__link--tell {
+  color: $acent-text-color;
+}
+
+.auth-naw__link--size {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.socia__list {
+  display: flex;
+  justify-content: flex-start;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222;
+  letter-spacing: 0.02em;
+}
+
+.social__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  padding-right: 10px;
+  padding-left: 10px;
+
+  color: $acent-text-color;
+
+  &:last-child {
+    padding-right: 0;
+    border: none;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+// .social__item--line::after {
+//   content: " ";
+//   display: block;
+
+//   width: 22px;
+//   height: 1px;
+//   background-color: rgba(236, 12, 12, 0.2);
+//   transform: rotate(90deg);
+// }

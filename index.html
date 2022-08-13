@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./sass/components/_normalize.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,41 +21,61 @@
     <!--Шапка профиля-->
     <header class="section header">
         <div class="main-naw container">
-            <nav class="navigation">
-                <a href="./index.html" class="logo"> <span class="logo-web ">Web</span> Studio</a>
+            <a href="./index.html" class="logo"> <span class="logo-web ">Web</span> Studio</a>
+            <button type="button" class="burger__menu_button is-open" data-menu-button aria-expanded="false">
+                <svg class="burger__menu_svg" aria-label="переключатель мобильного меню" width="40px" height="40px">
+                    <use href="./images/mobile/mobile-svg/mobile_sprite.svg#menu" class="burger__menu__icon--menu">
+                    </use>
+                    <use href="./images/mobile/mobile-svg/mobile_sprite.svg#close" class="burger__menu__icon--close">
+                    </use>
+                </svg>
+            </button>
 
-                <ul class="site-naw">
-                    <li class="item site-naw__item "> <a href="./index.html"
-                            class="link site-naw_link current">Студия</a>
+            <!-- hidden -->
+            <div class="burger__menu  backdrop_menu  ">
+                <nav class="navigation">
+                    <ul class="site-naw">
+                        <li class="item site-naw__item "> <a href="./index.html"
+                                class="link site-naw_link current">Студия</a>
+                        </li>
+                        <li class="item site-naw__item"><a href="./portfolio.html"
+                                class="link site-naw_link ">Портфолио</a>
+                        </li>
+                        <li class="item site-naw__item"><a href="" class="link site-naw_link">Контакты</a> </li>
+                    </ul>
+                </nav>
+
+                <ul class="link auth-naw">
+                    <li class="item auth-naw__item">
+                        <a href="tel:+380961111111" class="link auth-naw__link auth-naw__link--tell">
+                            <svg class="icon-company auth-naw__svg" width="10px" height="16px">
+                                <use href="./images/icon.svg/sprite.svg/symbol-defs.svg#icon-phone">
+                                </use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
-                    <li class="item site-naw__item"><a href="./portfolio.html" class="link site-naw_link ">Портфолио</a>
+                    <li class="item auth-naw__item">
+                        <a href="mail:info@devstudio.com" class="link auth-naw__link  auth-naw__link--size">
+
+                            <svg class="icon-company auth-naw__svg" width="16px" height="12px">
+                                <use href="./images/icon.svg/sprite.svg/symbol-defs.svg#icon-envelope-hover">
+                                </use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="item site-naw__item"><a href="" class="link site-naw_link">Контакты</a> </li>
+
                 </ul>
-            </nav>
-
-            <ul class="link auth-naw">
-                <li class="item auth-naw__item">
-                    <a href="mail:info@devstudio.com" class="link auth-naw__link">
-
-                        <svg class="icon-company auth-naw__svg" width="16px" height="12px">
-                            <use href="./images/icon.svg/sprite.svg/symbol-defs.svg#icon-envelope-hover">
-                            </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="link auth-naw__link">
-                        <svg class="icon-company auth-naw__svg" width="10px" height="16px">
-                            <use href="./images/icon.svg/sprite.svg/symbol-defs.svg#icon-phone">
-                            </use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="socia__list">
+                    <p class="social__item">Instagram</p>
+                    <p class="social__item ">Twitter</p>
+                    <p class="social__item ">Facebook</p>
+                    <p class="social__item ">LinkedIn</p>
+                </ul>
+            </div>
         </div>
+
 
     </header>
     <!-- Main -->
@@ -548,6 +568,8 @@
     <!-- JavaScript -->
 
     <script src="./js/modal.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 

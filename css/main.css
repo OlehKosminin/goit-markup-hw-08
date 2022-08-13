@@ -312,11 +312,7 @@ section {
 }
 
 .site-naw {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #212121;
-  margin-left: 93px;
   padding-left: 0;
 }
 
@@ -332,78 +328,116 @@ section {
           justify-content: space-between;
 }
 
-.site-naw .item:last-child {
-  margin-right: 0;
+.icon-company {
+  display: none;
 }
 
-.item .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.burger__menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  background-color: #ffffff;
 }
 
-.item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-right: 30px;
+.burger__menu_button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+  max-width: 40px;
+  max-height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.burger__menu_button {
+  display: inline-block;
+  fill: #212121;
+  width: 40px;
+  height: 40px;
+  z-index: 11;
+}
+.burger__menu_button .burger__menu__icon--close {
+  display: none;
+}
+.burger__menu_button.is-open .burger__menu__icon--close {
+  display: block;
+}
+.burger__menu_button.is-open .burger__menu__icon--menu {
+  display: none;
+}
+
+.site-naw {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  margin-bottom: 250px;
 }
 
 .site-naw__item {
-  position: relative;
-  margin-right: 50px;
+  margin-bottom: 35px;
+}
+.site-naw__item:last-child {
+  margin-bottom: 0;
 }
 
 .auth-naw {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+}
+
+.auth-naw__item {
+  margin-bottom: 32px;
+}
+.auth-naw__item:last-child {
+  margin-bottom: 0;
+}
+
+.auth-naw__link--tell {
+  color: #2196f3;
+}
+
+.auth-naw__link--size {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.socia__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  padding-left: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222;
+  letter-spacing: 0.02em;
 }
 
-.auth-naw .item:last-child {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.auth-naw__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.auth-naw__item {
-  display: block;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.site-naw__item {
-  position: relative;
-  margin-right: 50px;
-  color: #212121;
-}
-
-.auth-naw__item {
-  position: relative;
-  margin-right: 50px;
-  color: #212121;
-}
-
-.site-naw_link {
-  color: #212121;
-}
-
-.auth-naw__svg {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.current {
+.social__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  padding-left: 10px;
   color: #2196f3;
+}
+.social__item:last-child {
+  padding-right: 0;
+  border: none;
+}
+.social__item:first-child {
+  padding-left: 0;
 }
 
 .section-hero {

@@ -62,10 +62,8 @@
 }
 
 .site-naw {
-  display: flex;
-
   color: $primari-text-color;
-  margin-left: 93px;
+
   padding-left: 0;
 }
 
@@ -75,77 +73,81 @@
   justify-content: space-between;
 }
 
-.site-naw .item:last-child {
-  margin-right: 0;
+.icon-company {
+  display: none;
 }
 
-.item .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+// .site-naw .item:last-child {
+//   margin-right: 0;
+// }
 
-.item {
-  box-sizing: border-box;
-  margin-right: 30px;
-}
+// .item .link {
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
 
-.site-naw__item {
-  position: relative;
-  margin-right: 50px;
-}
+// .item {
+//   box-sizing: border-box;
+//   margin-right: 30px;
+// }
 
-.auth-naw {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding-left: 0;
-}
+// .site-naw__item {
+//   position: relative;
+//   margin-right: 50px;
+// }
 
-.auth-naw .item:last-child {
-  margin-left: 0;
-  margin-right: 0;
-}
+// .auth-naw {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
+//   padding-left: 0;
+// }
 
-.auth-naw__icon {
-  fill: currentColor;
+// .auth-naw .item:last-child {
+//   margin-left: 0;
+//   margin-right: 0;
+// }
 
-  margin-right: 10px;
-}
+// .auth-naw__icon {
+//   fill: currentColor;
 
-.auth-naw__item {
-  display: block;
-}
+//   margin-right: 10px;
+// }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
+// .auth-naw__item {
+//   display: block;
+// }
 
-.site-naw__item {
-  position: relative;
+// .header {
+//   border-bottom: 1px solid #ececec;
+// }
 
-  margin-right: 50px;
+// .site-naw__item {
+//   position: relative;
 
-  color: $primari-text-color;
-}
+//   margin-right: 50px;
 
-.auth-naw__item {
-  position: relative;
+//   color: $primari-text-color;
+// }
 
-  margin-right: 50px;
+// .auth-naw__item {
+//   position: relative;
 
-  color: $primari-text-color;
-}
+//   margin-right: 50px;
 
-.site-naw_link {
-  color: $primari-text-color;
-}
+//   color: $primari-text-color;
+// }
 
-.auth-naw__svg {
-  fill: currentColor;
+// .site-naw_link {
+//   color: $primari-text-color;
+// }
 
-  margin-right: 10px;
-}
+// .auth-naw__svg {
+//   fill: currentColor;
 
-.current {
-  color: $acent-text-color;
-}
+//   margin-right: 10px;
+// }
+
+// .current {
+//   color: $acent-text-color;
+// }
