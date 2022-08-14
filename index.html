@@ -32,11 +32,11 @@
             </button>
 
             <!-- hidden -->
-            <div class="burger__menu  backdrop_menu  ">
+            <div class="burger__menu " data-menu>
                 <nav class="navigation">
                     <ul class="site-naw">
-                        <li class="item site-naw__item "> <a href="./index.html"
-                                class="link site-naw_link current">Студия</a>
+                        <li class="item site-naw__item current"> <a href="./index.html"
+                                class="link site-naw_link ">Студия</a>
                         </li>
                         <li class="item site-naw__item"><a href="./portfolio.html"
                                 class="link site-naw_link ">Портфолио</a>
@@ -47,15 +47,6 @@
 
                 <ul class="link auth-naw">
                     <li class="item auth-naw__item">
-                        <a href="tel:+380961111111" class="link auth-naw__link auth-naw__link--tell">
-                            <svg class="icon-company auth-naw__svg" width="10px" height="16px">
-                                <use href="./images/icon.svg/sprite.svg/symbol-defs.svg#icon-phone">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                    <li class="item auth-naw__item">
                         <a href="mail:info@devstudio.com" class="link auth-naw__link  auth-naw__link--size">
 
                             <svg class="icon-company auth-naw__svg" width="16px" height="12px">
@@ -65,13 +56,23 @@
                             info@devstudio.com
                         </a>
                     </li>
+                    <li class="item auth-naw__item">
+                        <a href="tel:+380961111111" class="link auth-naw__link auth-naw__link--tell">
+                            <svg class="icon-company auth-naw__svg" width="10px" height="16px">
+                                <use href="./images/icon.svg/sprite.svg/symbol-defs.svg#icon-phone">
+                                </use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+
 
                 </ul>
                 <ul class="socia__list">
-                    <p class="social__item">Instagram</p>
-                    <p class="social__item ">Twitter</p>
-                    <p class="social__item ">Facebook</p>
-                    <p class="social__item ">LinkedIn</p>
+                    <a href="#" class="social__item">Instagram</a>
+                    <a href="#" class="social__item ">Twitter</a>
+                    <a href="#" class="social__item ">Facebook</a>
+                    <a href="#" class="social__item ">LinkedIn</a>
                 </ul>
             </div>
         </div>
@@ -184,7 +185,7 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="title"> ВНИМАНИЕ К ДЕТАЛЯМ </h3>
+                        <h3 class="title trait__title"> ВНИМАНИЕ К ДЕТАЛЯМ </h3>
                         <p class="trait-text">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
                     </li>
@@ -195,12 +196,12 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
+                        <h3 class="title trait__title">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="trait-text">Задача организации, в особенности же рамки и место обучения кадров влечет
                             за собой.</p>
                     </li>
                     <li class="item trait__item icon-diagrama">
-                        <div class="trait__thumb">
+                        <div class="trait__thumb ">
                             <svg class=" " width="70px" height="70px">
                                 <use href="./images/icon.svg/sprite.svg/symbol-defs.svg#icon-diagram-1"
                                     class="icon-svg">
@@ -208,7 +209,7 @@
                             </svg>
 
                         </div>
-                        <h3 class="title"> ПЛАНИРОВАНИЕ</h3>
+                        <h3 class="title trait__title"> ПЛАНИРОВАНИЕ</h3>
                         <p class="trait-text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
@@ -220,7 +221,7 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                        <h3 class="title trait__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p class="trait-text">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.</p>
                     </li>

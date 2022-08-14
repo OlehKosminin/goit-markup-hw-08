@@ -3,7 +3,7 @@
 }
 
 .trait__item {
-  margin-right: 30px;
+  // margin-right: 30px;
 }
 
 .item-tumb {
@@ -30,10 +30,12 @@
   text-transform: uppercase;
 }
 
-.trait__item:last-child {
-  margin-right: 0;
+.trait__item {
+  max-width: 100%;
+
+  margin-bottom: 30px;
 }
 
-.trait__item {
-  max-width: 370px;
+.trait__item:last-child {
+  margin-bottom: 0;
 }

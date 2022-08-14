@@ -8,12 +8,6 @@
   margin-bottom: 50px;
 }
 
-.team {
-  background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .title {
   color: $primari-text-color;
   font-weight: $secendary-weight-font;
@@ -46,10 +40,14 @@
   align-items: center;
   justify-content: center;
 
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+.trait__title {
+  text-align: center;
 }
 
 .section-style {

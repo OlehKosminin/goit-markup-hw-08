@@ -52,20 +52,6 @@ section {
   /* text-align: center; */
 }
 
-.current::after {
-  content: "";
-  display: block;
-
-  position: absolute;
-  bottom: -3px;
-
-  border-radius: 4px;
-  width: 100%;
-  height: 4px;
-  color: $acent-text-color;
-  background-color: $acent-text-color;
-}
-
 .hidden {
   position: absolute;
   width: 1px;
@@ -79,9 +65,9 @@ section {
   overflow: hidden;
 }
 
-.trait {
-  display: flex;
-}
+// .trait {
+//   display: flex;
+// }
 
 .backdown__bottom {
   background: #f5f4fa;
