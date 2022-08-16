@@ -31,16 +31,16 @@
   text-align: center;
 }
 
-.item:nth-child(4n) {
-  margin-right: 0;
-}
+// .item:nth-child(4n) {
+//   margin-right: 0;
+// }
 
 .trait__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 100%;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -48,6 +48,9 @@
 
 .trait__title {
   text-align: center;
+  @media screen and(min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .section-style {

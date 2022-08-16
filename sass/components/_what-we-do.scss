@@ -2,6 +2,12 @@
   display: flex;
 }
 
+.what-we-do--section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .trait__item {
   // margin-right: 30px;
 }
@@ -31,11 +37,39 @@
 }
 
 .trait__item {
-  max-width: 100%;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
 
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    max-width: 450px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    margin: 0;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
-.trait__item:last-child {
-  margin-bottom: 0;
+.trait {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
+
+// .trait__item:last-child {
+//   margin-bottom: 0;
+// }
