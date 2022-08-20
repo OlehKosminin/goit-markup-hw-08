@@ -5,6 +5,13 @@
   font-size: 26px;
   line-height: 31px;
 }
+
+.auth-naw {
+  @media screen and(min-width: 768px) {
+    justify-content: start;
+  }
+}
+
 .auth-naw__link {
   color: #757575;
 }
@@ -104,6 +111,7 @@
 
 .auth-naw__item {
   @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -111,18 +119,18 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
-}
-
-.auth-naw__item {
-  @media screen and (max-width: 767px) {
-    &:last-child {
-      margin-bottom: 32px;
-    }
-  }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
 }
+
+// .auth-naw__item {
+//   @media screen and (max-width: 767px) {
+//     &:last-child {
+//       margin-bottom: 32px;
+//     }
+//   }
+// }
 
 .icon-company {
   display: none;

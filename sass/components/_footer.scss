@@ -9,13 +9,19 @@
 .tablet__wraper {
   @media screen and(min-width:768px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
+    margin-bottom: 60px;
   }
 }
 
 .logo-margin-bottom {
   justify-content: center;
   margin-bottom: 20px;
+
+  @media screen and(min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .studio {
@@ -35,6 +41,11 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
   color: #ffffff;
   font-weight: 400;
   font-style: normal;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .footer-adrs {
@@ -91,7 +102,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
 
   box-sizing: border-box;
 
-  max-width: 44px;
+  width: 44px;
   height: 44px;
   border-radius: 50%;
 
@@ -154,6 +165,14 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
   text-align: center;
 
   justify-content: center;
+
+  @media screen and(min-width: 1200px) {
+    text-align: start;
+
+    min-width: 231px;
+
+    margin-right: 60px;
+  }
 }
 
 .footer-flex {
@@ -162,9 +181,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
     justify-content: flex-start;
     align-items: baseline;
 
-    max-width: 231px;
-
-    margin-right: 70px;
+    // max-width: 231px;
   }
 }
 
@@ -173,7 +190,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
 .sing-in {
   @media screen and(min-width: 1200px) {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
 
     margin-left: 95px;
@@ -228,13 +245,15 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
-  min-width: 450px;
+  width: 100%;
   min-height: 50px;
 
   padding-left: 16px;
 
   @media screen and(min-width: 768px) {
     width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and(min-width: 1200px) {
@@ -259,6 +278,9 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
   line-height: 1.875;
 
   letter-spacing: 0.06em;
+  @media screen and(min-width:1200px) {
+    margin-top: 16px;
+  }
 }
 
 .sing-in__icon {
