@@ -27,7 +27,7 @@
 .item-partner {
   margin: 15px;
 
-  width: calc((100% - 2 * 60px) / 2);
+  // width: calc((100% - 2 * 60px) / 2);
 
   @media screen and(min-width: 767px) {
   }
@@ -38,16 +38,16 @@
   }
 
   @media screen and(min-width: 1200px) {
-    width: 170px;
+    width: 175px;
     height: 92px;
   }
 }
 
-.item-partner:not(:last-child) {
-  @media screen and(min-width: 1200px) {
-    margin-right: 30px;
-  }
-}
+// .item-partner:not(:last-child) {
+//   @media screen and(min-width: 1200px) {
+//     margin-right: 30px;
+//   }
+// }
 
 .link-partner {
   width: 100%;
@@ -74,9 +74,9 @@
 
   @media screen and(min-width: 768px) {
     padding-top: 16px;
-    // padding-right: 60px;
+    padding-right: 32px;
     padding-bottom: 16px;
-    // padding-left: 60px;
+    padding-left: 32px;
   }
 }
 

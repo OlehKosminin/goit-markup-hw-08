@@ -1,5 +1,5 @@
 .burger__menu {
-  z-index: 10;
+  z-index: 5;
   &.is-open {
     @media screen and (max-width: 767px) {
       opacity: 1;
@@ -8,6 +8,10 @@
   }
 
   @media screen and (max-width: 767px) {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
     opacity: 0;
     pointer-events: none;
 
@@ -28,12 +32,13 @@
     display: flex;
     align-items: center;
 
-    margin-left: auto;
     padding-left: 0;
   }
 }
 
 .burger__menu_button {
+  z-index: 10;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -45,8 +50,6 @@
 
     width: 40px;
     height: 40px;
-
-    z-index: 9;
 
     padding: 0;
     margin: 0;
@@ -80,12 +83,12 @@
 }
 
 .site-naw {
+  color: $primari-text-color;
+
   @media screen and (max-width: 767px) {
     font-size: 40px;
     line-height: 1.175;
     letter-spacing: 0.02em;
-
-    margin-bottom: 250px;
   }
 
   font-weight: 500;
@@ -111,11 +114,10 @@
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
-    margin-bottom: 64px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 80px;
+    margin-left: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -130,6 +132,8 @@
 }
 
 .auth-naw__link--size {
+  color: $link-text-color;
+
   @media screen and (max-width: 767px) {
     font-weight: 500;
     font-size: 24px;

@@ -297,6 +297,16 @@ img {
   font-family: "Raleway", sans-serif;
   color: #000000;
 }
+@media screen and (max-width: 1199px) {
+  .logo {
+    margin-right: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 92px;
+  }
+}
 
 .logo-web {
   color: #2196f3;
@@ -359,9 +369,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .main-naw {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -380,6 +394,7 @@ img {
 @media screen and (min-width: 1200px) {
   .auth-naw__item {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -409,7 +424,7 @@ img {
 }
 
 .burger__menu {
-  z-index: 10;
+  z-index: 5;
 }
 @media screen and (max-width: 767px) {
   .burger__menu.is-open {
@@ -419,6 +434,16 @@ img {
 }
 @media screen and (max-width: 767px) {
   .burger__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     opacity: 0;
     pointer-events: none;
     top: 0;
@@ -440,11 +465,13 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: auto;
     padding-left: 0;
   }
 }
 
+.burger__menu_button {
+  z-index: 10;
+}
 @media screen and (min-width: 768px) {
   .burger__menu_button {
     display: none;
@@ -459,7 +486,6 @@ img {
     fill: #212121;
     width: 40px;
     height: 40px;
-    z-index: 9;
     padding: 0;
     margin: 0;
     margin-right: 15px;
@@ -485,6 +511,7 @@ img {
 }
 
 .site-naw {
+  color: #212121;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
@@ -492,7 +519,6 @@ img {
     font-size: 40px;
     line-height: 1.175;
     letter-spacing: 0.02em;
-    margin-bottom: 250px;
   }
 }
 
@@ -520,12 +546,11 @@ img {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
-    margin-bottom: 64px;
   }
 }
 @media screen and (min-width: 768px) {
   .auth-naw {
-    margin-left: 80px;
+    margin-left: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -546,6 +571,7 @@ img {
 }
 
 .auth-naw__link--size {
+  color: #757575;
   letter-spacing: 0.02em;
 }
 @media screen and (max-width: 767px) {
@@ -699,6 +725,7 @@ img {
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1112,6 +1139,10 @@ input[type=checkbox] {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team__cart {
     margin: -15px;
   }
 }
@@ -1257,7 +1288,6 @@ input[type=checkbox] {
 
 .item-partner {
   margin: 15px;
-  width: calc((100% - 120px) / 2);
 }
 @media screen and (min-width: 768px) {
   .item-partner {
@@ -1267,14 +1297,8 @@ input[type=checkbox] {
 }
 @media screen and (min-width: 1200px) {
   .item-partner {
-    width: 170px;
+    width: 175px;
     height: 92px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .item-partner:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -1306,7 +1330,9 @@ input[type=checkbox] {
 @media screen and (min-width: 768px) {
   .link-partner {
     padding-top: 16px;
+    padding-right: 32px;
     padding-bottom: 16px;
+    padding-left: 32px;
   }
 }
 
@@ -1670,8 +1696,14 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
 }
 
 .section-portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 .port-title {
