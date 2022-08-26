@@ -222,11 +222,21 @@ img {
 
 .backdown__bottom {
   background: #f5f4fa;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .backdown__bottom {
+    padding-bottom: 94px;
+  }
 }
 
 .backdown__top {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .backdown__top {
+    padding-top: 94px;
+  }
 }
 
 .header {
@@ -300,7 +310,6 @@ img {
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 92px;
-    margin-right: 80px;
   }
 }
 
@@ -371,6 +380,12 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-naw {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -446,7 +461,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 30px;
+    padding: 40px;
     position: absolute;
     background-color: #ffffff;
     -webkit-transition: opacity 250ms linear, background-color 250ms linear;
@@ -542,11 +557,6 @@ img {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .auth-naw {
-    margin-left: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1121,6 +1131,11 @@ input[type=checkbox] {
 .padding-none {
   padding-top: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .padding-none {
+    padding-bottom: 0;
+  }
+}
 
 .cart-bottom {
   padding-top: 30px;
@@ -1255,6 +1270,9 @@ input[type=checkbox] {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: -15px;
   }
 }
@@ -1332,6 +1350,7 @@ input[type=checkbox] {
   background-color: #2f303a;
   font-style: normal;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {

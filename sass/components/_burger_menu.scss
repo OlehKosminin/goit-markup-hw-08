@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
 
-    padding: 30px;
+    padding: 40px;
     position: absolute;
 
     background-color: $secondary-white-color;
@@ -116,9 +116,13 @@
     line-height: 40px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-left: 60px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   margin-left: 60px;
+  // }
+
+  // @media screen and (max-width: 1199px) {
+  //   margin-left: 40px;
+  // }
 
   @media screen and (min-width: 1200px) {
     display: flex;

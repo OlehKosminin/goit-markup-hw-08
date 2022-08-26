@@ -59,9 +59,12 @@
   font-family: "Raleway", sans-serif;
   color: #000000;
 
+  // @media screen and (min-width: 768px) {
+  //   margin-right: 80px;
+  // }
+
   @media screen and (min-width: 1200px) {
     margin-right: 92px;
-    margin-right: 80px;
   }
 }
 
@@ -71,10 +74,18 @@
 }
 
 .navigation {
+  // @media screen and (max-width: 767px) {
+  //   margin-left: 80px;
+  // }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
+
+  // @media screen and (max-width: 1199px) {
+  //   margin-left: 40px;
+  // }
 }
 
 .site-naw {
@@ -117,6 +128,10 @@
   align-items: center;
   @media screen and (max-width: 767px) {
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-around;
   }
 }
 
