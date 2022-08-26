@@ -11,12 +11,9 @@
   @media screen and(max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
 
     margin: -15px;
-  }
-  @media screen and(max-width:1200px) {
-    justify-content: center;
   }
 
   @media screen and(min-width:768px) {
@@ -25,9 +22,11 @@
 }
 
 .item-partner {
+  justify-content: center;
+
   margin: 15px;
 
-  // width: calc((100% - 2 * 60px) / 2);
+  width: calc((100% - 2 * 60px) / 2);
 
   @media screen and(min-width: 767px) {
   }
@@ -59,9 +58,9 @@
   align-content: center;
 
   padding-top: 16px;
-  // padding-right: 52px;
+  padding-right: 52px;
   padding-bottom: 16px;
-  // padding-left: 52px;
+  padding-left: 52px;
 
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;

@@ -101,15 +101,14 @@
 
 .card-galery {
   padding-left: 0;
+  margin: -15px;
+
+  z-index: 5;
 
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     display: flex;
-
-    margin: -15px;
   }
-
-  z-index: 5;
 }
 
 .card-img {

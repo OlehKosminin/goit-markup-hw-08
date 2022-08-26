@@ -297,14 +297,10 @@ img {
   font-family: "Raleway", sans-serif;
   color: #000000;
 }
-@media screen and (max-width: 1199px) {
-  .logo {
-    margin-right: 80px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 92px;
+    margin-right: 80px;
   }
 }
 
@@ -1090,7 +1086,6 @@ input[type=checkbox] {
   .trait {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
   }
 }
 
@@ -1139,11 +1134,6 @@ input[type=checkbox] {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .team__cart {
-    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1265,17 +1255,7 @@ input[type=checkbox] {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin: -15px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .list-partner {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1287,7 +1267,11 @@ input[type=checkbox] {
 }
 
 .item-partner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 15px;
+  width: calc((100% - 120px) / 2);
 }
 @media screen and (min-width: 768px) {
   .item-partner {
@@ -1317,7 +1301,9 @@ input[type=checkbox] {
   -ms-flex-line-pack: center;
       align-content: center;
   padding-top: 16px;
+  padding-right: 52px;
   padding-bottom: 16px;
+  padding-left: 52px;
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
   -webkit-transition: all 0.3s ease 0s;
@@ -1804,6 +1790,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
 
 .card-galery {
   padding-left: 0;
+  margin: -15px;
   z-index: 5;
 }
 @media screen and (min-width: 768px) {
@@ -1813,7 +1800,6 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: -15px;
   }
 }
 
