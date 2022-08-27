@@ -155,6 +155,10 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   outline: none;
