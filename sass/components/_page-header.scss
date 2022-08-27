@@ -63,9 +63,9 @@
   //   margin-right: 80px;
   // }
 
-  @media screen and (min-width: 1200px) {
-    margin-right: 92px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-right: 92px;
+  // }
 }
 
 .logo-web {
@@ -98,12 +98,18 @@
     padding-left: 0;
   }
 
+  @media screen and (max-width: 1199px) {
+    margin-right: 80px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 150px;
   }
 }
 
 .site-naw__item {
+  text-align: center;
+
   @media screen and (min-width: 768px) {
     margin-right: 50px;
     position: relative;
@@ -127,11 +133,13 @@
   display: flex;
   align-items: center;
   @media screen and (max-width: 767px) {
+    padding: 16px 15px;
+
     justify-content: space-between;
   }
 
   @media screen and (min-width: 768px) {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
 

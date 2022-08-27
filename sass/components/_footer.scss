@@ -3,7 +3,10 @@
   font-style: normal;
 
   padding-top: 60px;
-  padding-bottom: 60px;
+
+  @media screen and(max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 }
 
 .tablet__wraper {
@@ -224,6 +227,10 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
 
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 0;
+  }
 }
 
 .sing-in__input::placeholder {
