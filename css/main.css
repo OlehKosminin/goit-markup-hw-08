@@ -327,6 +327,11 @@ img {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-left: 93px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .site-naw {
@@ -340,20 +345,12 @@ img {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 1199px) {
-  .site-naw {
-    margin-right: 80px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .site-naw {
-    margin-right: 150px;
+    margin-right: 272px;
   }
 }
 
-.site-naw__item {
-  text-align: center;
-}
 @media screen and (min-width: 768px) {
   .site-naw__item {
     margin-right: 50px;
@@ -390,14 +387,6 @@ img {
             justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
-  .main-naw {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .auth-naw__item {
     margin-bottom: 10px;
@@ -973,10 +962,22 @@ input[type=checkbox] {
 .section-title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.1785;
+  letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .title {
@@ -1462,7 +1463,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
 }
 
 .title-footer {
-  text-align: center;
+  text-align: start;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1470,6 +1471,11 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .title-footer {
+    text-align: center;
+  }
 }
 
 .footer-social {

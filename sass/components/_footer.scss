@@ -79,7 +79,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
 }
 
 .title-footer {
-  text-align: center;
+  text-align: start;
 
   margin-bottom: 20px;
 
@@ -90,6 +90,10 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
   text-transform: uppercase;
 
   color: $secondary-white-color;
+
+  @media screen and(max-width:1199px) {
+    text-align: center;
+  }
 }
 
 .footer-social {
