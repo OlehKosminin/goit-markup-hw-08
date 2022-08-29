@@ -815,6 +815,7 @@ img {
 }
 
 .form-field__title {
+  font-size: 12px;
   display: inline-block;
   margin-bottom: 4px;
 }
@@ -981,13 +982,9 @@ input[type=checkbox] {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
-  .section-title {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.2;
   }
@@ -1577,6 +1574,11 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .footer-container {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     text-align: start;
@@ -1866,7 +1868,6 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
 
 .card-galery {
   padding-left: 0;
-  margin: -15px;
   z-index: 5;
 }
 @media screen and (min-width: 768px) {
@@ -1876,6 +1877,7 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: -15px;
   }
 }
 
@@ -1891,6 +1893,11 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"] {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .cards-galery {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .cards-galery {

@@ -173,6 +173,10 @@ a[href="https://goo.gl/maps/727tqZzBJjCVUAbq7"]
 
   justify-content: center;
 
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and(min-width: 1200px) {
     text-align: start;
 
