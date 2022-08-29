@@ -327,6 +327,11 @@ img {
             align-items: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .navigation {
     margin-left: 93px;
@@ -387,6 +392,14 @@ img {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-naw {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .auth-naw__item {
     margin-bottom: 10px;
